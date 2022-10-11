@@ -1,1 +1,115 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: rgb(238, 236, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 375px) {
+  body {
+    height: auto;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.container-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.section-top, .section-bottom {
+  display: flex;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 375px) {
+  .section-top, .section-bottom {
+    flex-direction: column;
+  }
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 8px;
+  color: hsl(210deg, 46%, 95%);
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.479);
+}
+.card__body {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card__data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card__description {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+.card__header {
+  display: flex;
+  gap: 1rem;
+}
+.card__paragram1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.card__paragram2 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  opacity: 0.7;
+}
+.card__photo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.card__user {
+  font-size: 1rem;
+}
+.card--purple {
+  background-repeat: no-repeat;
+  background-position: 80% top;
+  background-color: rgb(117, 65, 200);
+  background-image: url(img/bg-pattern-quotation.svg);
+}
+.card--gray {
+  background-color: rgb(72, 85, 106);
+}
+.card--white {
+  color: hsl(217deg, 19%, 35%);
+  background-color: rgb(255, 255, 255);
+}
+.card--black {
+  background-color: rgb(25, 33, 46);
+}
+.card--height {
+  height: 100%;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$gap: 1.5rem;
+$max-width: 375px;
+
+body{
+    height: 100vh;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+    background-color: rgb(238, 236, 236);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $max-width) {
+        height: auto;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: $gap;
+
+    @media screen and (max-width: $max-width) {
+        margin: 1rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+}
+
+.section-top, .section-bottom{
+    display: flex;
+    gap: $gap;
+
+    @media screen and (max-width: $max-width) {
+        flex-direction: column;
+    }
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 8px;
+    color: hsl(210, 46%, 95%);
+    box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.479);
+
+    &__body {
+        margin-top: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__data {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__description {
+        font-size: .8rem;
+        opacity: .5;
+    }
+
+    &__header {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__paragram1 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    &__paragram2 {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.3rem;
+        opacity: .7;
+    }
+
+    &__photo {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    &__user {
+        font-size: 1rem;
+    }
+
+    &--purple{
+        background-repeat: no-repeat;
+        background-position: 80% top;
+        background-color: rgb(117, 65, 200);
+        background-image: url(img/bg-pattern-quotation.svg);
+    }
+
+    &--gray{
+        background-color: rgb(72, 85, 106);
+    }
+
+    &--white{
+        color:hsl(217, 19%, 35%);
+        background-color: rgb(255, 255, 255);
+    }
+
+    &--black{
+        background-color: rgb(25, 33, 46);
+    }
+    
+    &--height{
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+
+
+
+
+
